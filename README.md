@@ -18,9 +18,7 @@ This application was built using:
 
 ## Usage
 
-[Link to deployed application via GitHub Pages](https://atlantablack.github.io/Portfolio_June22/)
-
-[Link to GitHub repository](https://github.com/AtlantaBlack/Portfolio_June22)
+**[View Portfolio: June 2022](https://atlantablack.github.io/Portfolio_June22/)**
 
 ---
 
