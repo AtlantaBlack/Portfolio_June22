@@ -1,0 +1,566 @@
+:root {
+    --text: rgb(21, 26, 34);
+    --darkest: rgb(73, 84, 100);
+    --dark: rgb(187, 191, 202);
+    --light: rgb(238, 238, 238);
+    --lightest: rgb(248, 248, 244);
+
+    --eggshell: rgb(247, 247, 244);
+
+    --serene-green: rgb(140, 153, 135);
+    --forest-green: rgb(124, 148, 115);
+
+    --inky: #22223b;
+    --night: #4a4e69;
+    --dessert-night: #8f838d;
+    --dessert: #cfb4ae;
+    --sand: #f2e9e4;
+
+    --focus-orange: #f17d3f;
+    --focus-yellow: rgb(243, 185, 59);
+}
+
+* {
+    font-size: 20px;
+    line-height: 1.5rem;
+}
+
+
+/* ----------------------- */
+    /* GLOBAL ELEMENTS */
+/* ----------------------- */
+
+body {
+    font-family: "Garamond", "Georgia", "Times New Roman", Times, serif;
+    background-color: var(--dark);
+    color: var(--text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Garamond", "Georgia", "Times New Roman", Times, serif;
+    line-height: 1;
+    margin: 1.5rem 0;
+}
+
+h1 { 
+    font-size: 3.8rem; 
+    color: var(--darkest);
+}
+
+h2 { 
+    font-size: 1.8rem;
+    line-height: 2rem;
+    color: var(--sand);
+    text-align: center;
+}
+
+h3 { 
+    font-size: 1.2rem; 
+    color: var(--darkest);
+    margin: 0;
+}
+
+p {
+    text-align: center;
+    margin: 1rem 0;
+    line-height: 1.5rem;
+}
+
+.italicised {
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+
+
+/* ----------------------- */
+         /* LINKS */
+/* ----------------------- */
+
+a, a:hover {
+    text-decoration: none;
+    font-family: "Proxima Nova", "Europa", "Helvetica", Arial, sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+header a {
+    background-color: var(--eggshell);
+    color: var(--darkest);
+
+    padding: 0.5rem 0.65rem;
+    border: 0.08rem solid var(--darkest);
+    border-radius: 0.85rem;
+}
+
+.platforms-list a {
+    background-color: var(--serene-green);
+    width: 100%;
+    color: var(--lightest);
+    border: 2px solid var(--serene-green);
+    padding: 0.2rem 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.app-content a {
+    color: var(--darkest);
+    padding: 0.2rem 0.5rem;
+}
+
+header a:hover,
+header a:focus,
+.app-content a:hover,
+.app-content a:focus {
+    background-color: var(--serene-green);
+    color: var(--lightest);
+    border-color: var(--serene-green);
+}
+
+.platforms-list a:hover,
+.platforms-list a:focus {
+    background-color: var(--eggshell);
+    color: var(--text);
+    border-color: var(--text);
+}
+
+header a:focus {
+    outline: 0.12rem solid var(--focus-orange);
+    border-color: var(--lightest);
+}
+
+.platforms-list a:focus {
+    outline: 0.1rem solid var(--focus-orange);
+}
+
+
+/* ----------------------- */
+        /* HEADER */
+/* ----------------------- */
+
+header, footer {
+    border: 1px solid var(--light);
+    background: var(--light) url(../images/textured-white.jpg) no-repeat;
+    background-size: cover;
+}
+
+header p {
+    text-align: left;
+}
+
+.header-row {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 350px;
+    margin: 6% 4%;
+}
+
+.header-container {
+    flex: 1 0 100%;
+}
+
+.intro,
+.contact-form input {
+    margin-bottom: 1.5rem;
+}
+
+.main-nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav li {
+    display: inline;
+    flex: 1 0 100%;
+    line-height: 2.8rem;
+}
+
+.about-item {
+    display: inline;
+}
+
+
+/* ----------------------- */
+          /* MAIN */
+/* ----------------------- */
+
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    margin: 2rem 0.3rem;
+}
+
+
+/* MAIN: about me section */
+
+.content-container {
+    flex: 1 0 100%;
+    max-width: 100%;
+    background-color: var(--darkest);
+    color: var(--light);
+    border-radius: 1.2rem;
+    box-shadow: 0 0 0 0.1rem rgba(244, 244, 242, 0.5);
+    overflow: hidden;
+    margin: 0.5rem 0;
+}
+
+.content-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 100%;
+    padding: 1rem 0.6rem;
+    margin-bottom: 0.3rem;
+}
+
+.about-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    color: var(--dessert);
+    margin: 1rem;
+}
+
+li p {
+    display: inline;
+    line-height: 0.5rem;
+}
+
+.about-item::after {
+    content: "•";
+    color: var(--dessert-night);
+    padding-right: 0.3rem;
+}
+
+#portrait {
+    display: flex;
+    min-height: 100%;
+}
+
+#portrait img {
+    max-width: 100%; 
+    height: auto; 
+    object-fit: cover;
+}
+
+
+/* MAIN: portfolio section */
+
+.portfolio-row h2 {
+    color: var(--darkest);
+}
+
+.portfolio-row {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    background-color: var(--light);
+    padding: 0;
+}
+
+#portfolio-text-container {
+    flex: 0 0 100%;
+    margin-bottom: 1.5rem;
+}
+
+#portfolio-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.portfolio-container,
+#showcase-container {
+    width: 100%;
+    box-shadow: 0 0.2rem 0.4rem rgba(73, 84, 100, 0.3);
+    margin-bottom: 1.5rem;
+}
+
+.portfolio-container {
+    flex: 1 0 auto;
+    min-height: 25vh;
+}
+
+#showcase-container {
+    flex: 3 0 100%;
+    min-height: 50vh;
+}
+
+.gallery-card,
+#showcase-card {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 25vh;
+    background-color: var(--text);
+    border: 0;
+    padding: 0;
+    transition: all 0.2s ease-out;
+}
+
+#showcase-card {
+    height: 50vh;
+}
+
+.app-image {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    object-position: center;
+    opacity: 50%;
+    transition: all 0.2s ease-out;
+}
+
+.gallery-card p,
+#showcase-card p {
+    position: absolute;
+    width: 100%;
+    bottom: 5%;
+    left: 0;
+    text-align: left;
+    text-decoration: none;
+    font-family: "Proxima Nova", "Europa", "Helvetica", Arial, sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    background: linear-gradient(to right, var(--darkest) 45%, rgba(255,255,255,0));
+    color: var(--lightest);
+    padding: 0.5rem;
+    transition: all 0.2s ease-out;
+}
+
+.app-image:hover,
+.app-image:active {
+    opacity: 100%;
+}
+.gallery-card:hover,
+#showcase-card:hover,
+.active {
+    box-shadow: 0 0.2rem 0.4rem var(--serene-green);
+    opacity: 100%;
+}
+
+.gallery-card:hover p,
+.gallery-card:focus p,
+#showcase-card:hover p,
+#showcase-card:focus p {
+    background: var(--lightest);
+    color: var(--darkest);
+    outline: 0.1rem solid white;
+    box-shadow: 0 0 0 0.6rem var(--serene-green);
+}
+
+.gallery-card:focus,
+#showcase-card:focus {
+    outline: 0.18rem solid var(--focus-orange);
+}
+
+.app-content {
+    max-height: 0;
+    overflow: hidden;
+    color: var(--text);
+    text-align: center;
+    background-color: var(--lightest);
+    padding: 0 2rem;
+    transition: max-height 0.2s ease-out;
+}
+
+.link-padding {
+    padding-bottom: 1rem;
+    display: inline-block;
+}
+
+
+/* MAIN: contact section */
+
+.line-break {
+    white-space: pre-line;
+}
+
+.contact-form-h2 {
+    margin-bottom: 0rem;
+    color: var(--dessert);
+}
+
+.more-links {
+    margin-top: 1.2rem;
+    margin-bottom: 0.2rem;
+    color: var(--dessert);
+}
+
+.contact-form {
+    text-align: left;
+    line-height: 2rem;
+    margin: 1.5rem 0;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+::placeholder {
+    color: var(--dark);
+}
+
+input[type=text], textarea {
+    min-width: 100%;
+    font-family: "Proxima Nova", "Europa", "Helvetica", Arial, sans-serif;
+    font-weight: 300;
+    background-color: var(--lightest);
+    color: var(--text);
+    border:0;
+    border-radius: 0.4rem;
+    padding:10px;
+}
+
+textarea {
+    min-width: 100%;
+    max-width: 40vw;
+    min-height: 10%;
+    max-height: 50vh;
+}
+
+input[type=text]:focus, 
+textarea:focus {
+    outline-color: var(--text);
+    box-shadow: 0 0 0.7rem 0.2rem var(--forest-green);
+}
+
+.contact-form button {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 150px;
+    background-color: var(--serene-green);
+    color: var(--lightest);
+    font-family: "Proxima Nova", "Europa", "Helvetica", Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    border: 0.1rem solid var(--serene-green);
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+    margin-top: 1rem;
+}
+
+.contact-form button:hover,
+.contact-form button:focus {
+    background-color: var(--eggshell);
+    color: var(--text);
+    border-color: var(--inky);
+    cursor: pointer;
+}
+
+.contact-form button:focus {
+    outline: 0.15rem solid var(--focus-orange);
+}
+
+.contact-platforms li img {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.35rem;
+}
+
+.platforms-list {
+    display: flex;
+}
+
+
+/* ----------------------- */
+        /* FOOTER */
+/* ----------------------- */
+
+footer {
+    height: 6vh;
+    text-align: center;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    flex: 1;
+}
+
+/* ----------------------- */
+     /* MEDIA QUERIES */
+/* ----------------------- */
+
+@media screen and (min-width: 374px) {
+    .header-container {
+        width: 100%;
+    }
+    .main-nav li {
+        flex: 0;
+    }
+    .row {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .about-list::before {
+    content: "•";
+    color: var(--dessert-night);
+    padding-right: 0.3rem;
+    }
+    .content-card {
+        padding: 1rem 2.5rem;
+    }
+}
+
+@media screen and (min-width: 539px) {
+     .header-row {
+        flex-direction: row;
+        margin: 6%;
+    }
+    .main-nav {
+        justify-content: flex-end;
+    }
+    .main-nav li {
+        line-height: 1rem;
+        margin-left: 2rem;
+    }
+    .row {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .portfolio-row {
+        flex-direction: row;
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .portfolio-row {
+        padding: 1rem 4rem;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .row {
+        justify-content: space-between;
+    }    
+    .portfolio-row {
+        padding: 1rem 6rem;
+    }
+    .content-container, .portfolio-container {
+        flex: 1 0 48%;
+        max-width: 48%;
+    }    
+}
+
+@media screen and (min-width: 1200px) {
+    .portfolio-row {
+        padding: 1rem 10rem;
+    }
+}

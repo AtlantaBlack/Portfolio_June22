@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome icons -->
+    <link href="https://use.fontawesome.com/releases/v6.1.0/css/all.css" rel="stylesheet"
+        integrity="sha384-eLT4eRYPHTmTsFGFAzjcCWX+wHfUInVWNm9YnwpiatljsZOwXtwV2Hh6sHM6zZD9" crossorigin="anonymous">
+    <!-- reset stylesheet -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Sushan Yue &#183; web developer</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- header-row is the house (parent) for flexbox -->
+        <div class="header-row">
+            <!-- there are two flex children in this house -->
+
+            <div class="header-container">
+                <section class="intro">
+                    <h1>Hi, I'm Sushan</h1>
+                    <p class="italicised">it's a pleasure to meet you</p>
+                </section>  
+            </div>
+
+            <div class="header-container">
+                <nav>
+                    <ul class="main-nav">
+                        <li>
+                            <a href="#about-me">About</a></li>
+                        <li>
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- main section -->
+    <main>
+     <!-- 'about' section -->
+        <section class="row" id="about-me">
+            <!-- 'about' has two children in its flex house -->
+
+            <div class="content-container">
+                <section class="content-card">
+                    <h2 class="italicised">Sushan Yue</h2>
+
+                    <ul class="about-list italicised">
+                        <li class="about-item">
+                            <p>fledgling web developer</p>
+                        </li>
+                        <li class="about-item">
+                            <p>illustrator</p>
+                        </li>
+                        <li class="about-item">
+                            <p>avid lover of birds</p>
+                        </li>
+                    </ul>
+
+                    <p>My interest in web development began back in the early 2000s when Neopets was still a very big deal. I learnt HTML and CSS so I could make colourful webpages for my virtual pets and show them off.</p>
+
+                    <p>Today, I am completing a coding bootcamp for full-stack web development. Already I have built a number of responsive websites from the ground up, including a code quiz on JavaScript concepts, and a weather dashboard that can get you forecasts for any city in the world.</p> 
+
+                    <p>In April 2022, I took part in a fun little collaborative project. The app pairs a user with a Pokémon depending on that user's favourite music artist. Check it out below!</p>
+                </section>
+            </div>
+
+            <div class="content-container">
+                <div id="portrait">
+                    <img src="./assets/images/profile-img-square.jpg" alt="Portrait of Sushan Yue" />
+                </div>
+            </div>   
+        </section>
+
+        <!-- 'portfolio' section -->
+        <section class="portfolio-row" id="portfolio">
+            <!-- 'portfolio' has a number of flex children -->
+
+            <!-- section for opening text -->
+            <div id="portfolio-text-container">
+                <section id="portfolio-text">
+                    <h2>Recent Works</h2>
+                </section>
+            </div>
+
+                <!-- the main application display (big) -->
+                <section id="showcase-container">
+                    <button id="showcase-card" class="collapsible">
+                        <img class="app-image" src="./assets/images/screenshot-pokemon.jpg" alt="Application 1 (showcase): Single red and white ball centred on a black screen" />
+                        <p>What Kind of Pokémon Are You?</p>
+                    </button>
+                    <div class="app-content">
+                        <p>A collaborative project to discover kind of pokemon you are based on your musical preferences.</p>
+                        <div class="link-padding">
+                            <a href="https://github.com/jazzberriess/collab-what-pkmn-are-you">Link to Repo</a>
+                        </div>
+                        <div class="link-padding">
+                            <a href="https://jazzberriess.github.io/collab-what-pkmn-are-you/">Link to App</a>
+                        </div>
+                    </div>
+                </section>
+            
+                <!-- the following four application displays (smaller) -->
+                <section class="portfolio-container">
+                    <button class="gallery-card collapsible">
+                        <img class="app-image" src="./assets/images/screenshot-weather-dashboard.jpg" alt="Application 2: Weather Dashboard" />
+                        <p>Weather Dashboard</p>
+                    </button>
+                    <div class="app-content">
+                        <p>An application that shows current weather and future forecast for specified city.</p>
+                        <div class="link-padding">
+                            <a href="https://github.com/AtlantaBlack/Weather_Dashboard">Link to Repo</a>
+                        </div>
+                        <div class="link-padding">
+                            <a href="https://atlantablack.github.io/Weather_Dashboard/">Link to App</a>
+                        </div>                    
+                    </div>
+                </section>
+
+                <section class="portfolio-container">
+                    <button class="gallery-card collapsible">
+                        <img class="app-image" src="./assets/images/screenshot-code-quiz-start.jpg" alt="Application 3: Javascript Code Quiz" />
+                        <p>Javascript Code Quiz</p>
+                    </button>
+                    <div class="app-content">
+                        <p>A quiz on coding concepts built using Javascript and web APIs.</p>
+                        <div class="link-padding">
+                            <a href="https://github.com/AtlantaBlack/Code_Quiz">Link to Repo</a>
+                        </div>
+                        <div class="link-padding">
+                            <a href="https://atlantablack.github.io/Code_Quiz/">Link to App</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="portfolio-container">
+                    <button class="gallery-card collapsible">
+                        <img class="app-image" src="./assets/images/screenshot-scheduler.jpg" alt="Application 4: Work Day Scheduler" />
+                        <p>Work Day Scheduler</p>
+                    </button>
+                    <div class="app-content">
+                        <p>An interactive scheduler to help with planning the work day.</p>
+                        <div class="link-padding">
+                            <a href="https://github.com/AtlantaBlack/Work_Day_Scheduler">Link to Repo</a>
+                        </div>
+                        <div class="link-padding">
+                            <a href="https://atlantablack.github.io/Work_Day_Scheduler/">Link to App</a>
+                        </div>                        
+                    </div>
+                </section>
+
+                <section class="portfolio-container">
+                    <button class="gallery-card collapsible">
+                        <img class="app-image" src="./assets/images/screenshot-pg-05-password.jpg" alt="Application 5: Password Generator" />
+                        <p>Password Generator</p>
+                    </button>
+                    <div class="app-content">
+                        <p>JavaScript program that generates a random password using browser prompts.</p>
+                        <div class="link-padding">
+                            <a href="https://github.com/AtlantaBlack/Password_Generator">Link to Repo</a>
+                        </div>
+                        <div class="link-padding">
+                            <a href="https://atlantablack.github.io/Password_Generator/">Link to App</a>
+                        </div>                    
+                    </div>
+                </section>
+        </section>
+
+        <!-- contact section -->
+        <section class="row" id="contact">
+            <!-- 'contact' has two flex children -->
+
+            <!-- this section contains the contact form -->
+            <div class="content-container">
+                <section class="content-card">
+                    <h2 class="contact-form-h2 italicised">Let's Chat!</h2>
+                    <p class="line-break">Want to talk web? 
+                        Use the contact form below to get in touch!</p>
+
+                    <form class="contact-form">
+                        <label for="name">Your name:</label>
+                        <input type="text" id="name" name="name" placeholder="Write your name here" />
+                   
+                        <label for="message">Your message:</label>
+                        <textarea id="message" name="message" placeholder="Write your message here"></textarea>
+                    
+                        <button id="send-message">Send</button>
+                    </form>
+                </section>
+            </div>
+
+            <!-- this section has links to additional platforms for users to visit me on  -->
+            <div class="content-container">
+                <section class="content-card">
+                    <h2 class="more-links italicised">Extra Links</h2>
+                    <p class="line-break">Want to see more?
+                        Feel free to check out my GitHub and LinkedIn pages.</p>
+                    
+                    <ul class="contact-platforms">
+                       <li class="platforms-list">
+                            <a href="https://github.com/AtlantaBlack"><i class="fa-brands fa-github"></i>
+                            <p>GitHub</p></a>
+                        </li>
+                        <li class="platforms-list">
+                            <a href="https://www.linkedin.com/in/sushan-yue/"><i class="fa-brands fa-linkedin"></i>
+                            <p>LinkedIn</p></a>
+                        </li>
+                    </ul>
+
+                    <h2 class="more-links italicised">Resume</h2>
+                    <p class="line-break">My resume is available below.
+                        (<span class="italicised">Note:</span> The resume is password-protected for privacy.)
+                    </p>
+                    
+                    <ul class="contact-platforms">
+                       <li class="platforms-list">
+                            <a href="./assets/docs/Sushan-Yue_Technical-ResumeA.pdf"><i class="fa-solid fa-file"></i>
+                            <p>Resume</p></a>
+                        </li>
+                    </ul>
+
+                    <p>Looking forward to hearing from you!</p>
+                </section>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="footer-row">
+        <div class="footer-container">
+            <h3>&copy; 2022 Sushan Yue</h3>
+        </div>
+    </footer>
+    
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
