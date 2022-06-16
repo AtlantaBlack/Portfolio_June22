@@ -27,17 +27,19 @@ This application was built using:
 
 ---
 
-## Screenshots of Application
-
-![Screenshot of Professional Porfolio](assets/images/screenshot-portfolio.jpg?raw=true "Sushan Yue portfolio screenshot")
-
-![Screenshot of Professional Porfolio](assets/images/screenshot-portfolio-projects.jpg?raw=true "Sushan Yue portfolio projects screenshot")
-
----
-
 ## Demo
 
 ![Demo of Professional Porfolio](assets/images/demo-portfolio-june22.gif?raw=true "Sushan Yue portfolio demo")
+
+---
+
+## Screenshots
+
+Portfolio - Main:
+![Screenshot of Professional Porfolio: Main](assets/images/screenshot-main.jpg?raw=true "Screenshot of Professional Porfolio: Main")
+
+Portfolio - Recent Works:
+![Screenshot of Professional Porfolio: Recent Works](assets/images/screenshot-recent-works.jpg?raw=true "Screenshot of Professional Porfolio: Recent Works")
 
 ---
 
@@ -60,6 +62,6 @@ This application was built using:
 
 ## Contact
 
-- **[Send me an email!](mailto:syue.dev@gmail.com)**
+- **[Send Sushan an email!](mailto:syue.dev@gmail.com)**
 - [Sushan Yue @ GitHub](https://github.com/AtlantaBlack)
 - [Sushan Yue @ LinkedIn](https://www.linkedin.com/in/sushan-yue/)
