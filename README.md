@@ -2,7 +2,12 @@
 
 ## Description
 
-A professional portfolio to showcase the skills of a web developer.
+Hi there! I am a full-stack web developer, fresh off the block, with proficiencies in HTML, CSS, Handlebars, JavaScript, Node.js, Express.js, MySQL and Sequelize. Check out a few of my latest applications:
+
+1. **[What Kind of Pokémon Are You?](https://github.com/jazzberriess/collab-what-pkmn-are-you)**: A collaboration with fellow developers [Christi S](https://github.com/jazzberriess), [Vicky C](https://github.com/vicchyx), and [Glenn D](https://github.com/gd741). This is an interactive app that pairs players with a Pokémon according to the player's taste in music.
+2. **[Book Nest](https://github.com/grace-anderson/book-nest)**: A collaboration with fellow developers [Helen A](https://github.com/grace-anderson), [Muhamad S](https://github.com/s3793758), and [Marko P](https://github.com/Marko-Petreski). This app allows users to browse through a library of books and select which ones to put on (or remove from) their reading list. Users are able to add titles to Book Nest to share them with others.
+3. **[Tech Blog](https://github.com/AtlantaBlack/Tech_Blog)**: A blogging platform for developers to post their thoughts to like-minded individuals, and start conversations (through commenting) on blog posts made by others.
+4. **[Team Profile Generator](https://github.com/AtlantaBlack/Team_Profile_Generator)**: An app that uses Node.js and the CLI to allow development team managers to generate their own (very nice-looking) webpage that contains info cards for each of their team members.
 
 ---
 
@@ -32,7 +37,7 @@ This application was built using:
 
 ## Demo
 
-![Demo of Professional Porfolio](assets/images/demo-portfolio-april22.gif?raw=true "Sushan Yue portfolio demo")
+![Demo of Professional Porfolio](assets/images/demo-portfolio-june22.gif?raw=true "Sushan Yue portfolio demo")
 
 ---
 
@@ -55,6 +60,6 @@ This application was built using:
 
 ## Contact
 
-[Sushan Yue @ GitHub](https://github.com/AtlantaBlack)
-
-[Sushan Yue @ LinkedIn](https://www.linkedin.com/in/sushan-yue/)
+- **[Send me an email!](mailto:syue.dev@gmail.com)**
+- [Sushan Yue @ GitHub](https://github.com/AtlantaBlack)
+- [Sushan Yue @ LinkedIn](https://www.linkedin.com/in/sushan-yue/)
